@@ -24,7 +24,7 @@ const HeaderNavbar = () => {
   return (
     <Container>
       <div className="flex justify-between items-center">
-        <div className="px-3 max-w-[180px] sm:max-w-[200px]">
+        <Link href='/' className="px-3 max-w-[180px] sm:max-w-[200px]">
           <Image
             src="/logo.svg"
             width={200}
@@ -32,7 +32,7 @@ const HeaderNavbar = () => {
             alt="logo"
             className=""
           />
-        </div>
+        </Link>
         <div className="hidden lg:flex lg:gap-6 xl:gap-7">
           {menuLinks.map((menuLink, index) => (
             <Link
